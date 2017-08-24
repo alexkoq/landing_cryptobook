@@ -32,4 +32,24 @@ body {
 h4, h5, h6, h1, h2, h3, ul, p {
   margin: 0; }
 
+.top-wrap {
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 35px; }
+
+.logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 138px;
+  height: 45px; }
+
+.phone {
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28px;
+  height: 28px; }
+
 /*# sourceMappingURL=style.css.map */
