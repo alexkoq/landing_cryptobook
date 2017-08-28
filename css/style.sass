@@ -21,16 +21,16 @@
 
 $green: #4fff9e
 $blue: #5591ff
-$font-reg: 'GothaProReg'
-$font-light: 'GothaProLig'
-$font-bold: 'GothaProBol'
+$font-reg: 'GothaProReg',sans-serif
+$font-light: 'GothaProLig',sans-serif
+$font-bold: 'GothaProBol',sans-serif
 
 html
   box-sizing: border-box
 body
   width: 100%
   margin: 0 0 0 0
-  font-family: $font-light,sans-serif
+  font-family: $font-light
   box-sizing: border-box
 
 h4,h5,h6,h1,h2,h3,ul,p
@@ -63,9 +63,7 @@ h4,h5,h6,h1,h2,h3,ul,p
     line-height: 28px
     text-decoration: none
     color: #000
+    font-family: $font-reg
     &:hover
       text-decoration: underline
       cursor: pointer
-
-.phone-wrap
-  justify-content: flex-end
