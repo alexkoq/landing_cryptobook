@@ -21,9 +21,19 @@
 
 $green: #4fff9e
 $blue: #5591ff
+$text_gray: #bbbbbb
+$gold: #b28a47
 $font-reg: 'GothaProReg',sans-serif
 $font-light: 'GothaProLig',sans-serif
 $font-bold: 'GothaProBol',sans-serif
+$font-med: 'GothaProMed',sans-serif
+
+@mixin background ($path,$width:43px,$height:43px)
+  background-image: $path
+  background-size: contain
+  background-repeat: no-repeat
+  width: $width
+  height: $height
 
 html
   box-sizing: border-box
@@ -36,25 +46,21 @@ body
 h4,h5,h6,h1,h2,h3,ul,p
   margin: 0
 
+/* верхняя часть с книгой */
+
 .top-wrap
   background-image: url(../img/background.png)
   background-repeat: no-repeat
   background-size: cover
   padding-top: 35px
+  min-height: 900px
 
 .logo
-  background-image: url(../img/logo.png)
-  background-repeat: no-repeat
-  background-size: contain
-  width: 138px
-  height: 45px
+  @include background(url(../img/logo.png),138px,45px)
 
 .phone
-  background-image: url(../img/phone.png)
-  background-repeat: no-repeat
-  background-size: contain
-  width: 28px
-  height: 28px
+  @include background(url(../img/phone.png),28px,28px)
+  margin-right: 10px
 
 .number
   vertical-align: middle
@@ -87,7 +93,7 @@ h4,h5,h6,h1,h2,h3,ul,p
     font:
       size: 60px
       family: $font-bold
-
+/*кнопка*/
 .get-book
   a
     display: block
@@ -97,3 +103,144 @@ h4,h5,h6,h1,h2,h3,ul,p
     background-image: url(../img/button.png)
     background-repeat: no-repeat
     background-size: 323px 75px
+    &:hover
+      background-image: url(../img/button_hover.png)
+      background-repeat: no-repeat
+      background-size: 323px 75px
+
+.top-safety
+  margin-left: 0px
+  margin-right: 0px
+  margin-top: 15px
+  p
+    color: $text_gray
+    line-height: 16px
+    font:
+      size: 11px
+      family: $font-light
+  a
+    color: $text_gray
+
+.lock
+  @include background(url(../img/lock.png),21px,27px)
+
+
+/*средняя часть с круглыми иконками до формы */
+.description-wrap
+  h2
+    font:
+      size: 48px
+      family: $font-med
+
+.text-wrap
+  margin-top: 100px
+  margin-bottom: 90px
+
+.advantages-wrap
+  text-align: center
+  p
+    padding-top: 30px
+    font:
+      size: 21px
+      family: $font-reg
+  img
+    display: block
+    margin: 0 auto
+
+/* книга и форма*/
+.registration-wrap
+  margin-top: 140px
+
+.reg-book
+  margin-left: -20px
+  margin-top: 130px
+
+.form-wrap
+  margin-left: -100px
+  width: 500px
+
+.reg-text
+  text-align: center
+  font-size: 30px
+  h2
+    font-family: $font-reg
+    padding-bottom: 10px
+  span
+    font-family: $font-med
+
+/*платежки*/
+.payments-wrap
+  padding-top: 100px
+  padding-bottom: 100px
+  img
+    display: block
+    margin: 0 auto
+
+.first-line
+  padding-bottom: 35px
+
+.london,.dowjones,.nasdaq
+  align-self: center
+
+/*футер*/
+.footer-wrap
+  background-image: url(../img/background.png)
+  background-repeat: no-repeat
+  background-size: cover
+
+.links
+  color: $text_gray
+  text-align: center
+  font:
+    size: 16px
+    family: $font-reg,sans-serif
+    weight: normal
+  line-height: 1.5em
+  &-wrap
+    padding-top: 60px
+    padding-bottom: 30px
+  a
+    color: $gold
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.age-18
+  @include background(url(../img/18.png),41px,41px)
+  align-self: center
+
+.clean-100
+  @include background(url(../img/clean.png),50px,50px)
+
+.ssl
+  @include background(url(../img/ssl.png),56px,47px)
+
+.bottom-text-wrap
+  color: $text_gray
+  text-align: center
+  font-size: 14px
+  line-height: 2em
+  padding-top: 30px
+
+.copyright
+  padding-top: 40px
+  padding-bottom: 30px
+
+/*амедиа*/
+@media (max-width: 1200px)
+  .diners,.borse
+    margin-top: 20px
+
+@media (max-width: 991px)
+  .webmoney,.qiwi,.swift,.diners,.borse
+    margin-top: 20px
+
+  .diners
+    img
+      margin-left: auto
+      margin-right: none
+
+  .borse
+    img
+      margin-right: auto
+      margin-left: none
