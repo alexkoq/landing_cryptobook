@@ -64,4 +64,31 @@ h4, h5, h6, h1, h2, h3, ul, p {
       text-decoration: underline;
       cursor: pointer; }
 
+.top-book {
+  padding-left: 0px;
+  margin-left: -140px; }
+
+.top-book-wrap {
+  margin-top: 150px; }
+  .top-book-wrap h1 {
+    font-size: 60px;
+    font-family: "GothaProBol", sans-serif; }
+
+.top-book-text {
+  margin-left: 120px;
+  margin-top: 50px; }
+  .top-book-text h1 {
+    line-height: 70px;
+    font-size: 60px;
+    font-family: "GothaProBol", sans-serif; }
+
+.get-book a {
+  display: block;
+  width: 323px;
+  height: 75px;
+  margin-top: 75px;
+  background-image: url(../img/button.png);
+  background-repeat: no-repeat;
+  background-size: 323px 75px; }
+
 /*# sourceMappingURL=style.css.map */
