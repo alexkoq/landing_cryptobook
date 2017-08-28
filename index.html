@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="script/wow.min.js"></script>
     <title></title>
   </head>
   <body>
     <div class="top-wrap">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-xl-auto logo">
+          <div class="col-auto col-xl-auto logo">
 
           </div>
-          <div class="col- col-xl-auto phone-wrap align-self-end">
+          <div class="col-auto col-xl-auto phone-wrap align-self-end ">
             <div class="row ju">
             <div class="col-xl-auto phone">
             </div>
@@ -26,18 +28,18 @@
         </div>
         <div class="top-book-wrap">
         <div class="row">
-          <div class="col-xl-auto top-book">
+          <div class="col-lg-6 col-xl-auto top-book">
             <img src="img/1b.png">
           </div>
-          <div class="col-xl-6 top-book-text">
+          <div class="col-lg-6 col-xl-6 top-book-text">
             <h1>Скачайте книгу Криптовалюта от «А» до «Я»</h1>
             <div class="get-book">
               <a href="#"></a>
             </div>
             <div class="row top-safety">
-            <div class="col-xl-auto lock">
+            <div class="col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto lock">
             </div>
-            <div class="col-xl-7">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
               <p>770capital не разглашает личную информацию клиента. <a href="#">Политика конфиденциальности</a></p>
             </div>
             </div>
@@ -52,19 +54,19 @@
           <h2>Из этой книги вы узнаете:</h2>
         </div>
         <div class="row advantages-wrap justify-content-center">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 coin">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 coin wow flipInY" data-wow-duration="1.5s">
             <img src="img/coin.png">
             <p>Понятие и суть криптовалюты</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 blockchain">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 blockchain wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <img src="img/blockchain.png">
             <p>Блокчейн и его особенности</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 perspective">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 perspective wow flipInY" data-wow-duration="1.5s" data-wow-delay="1s">
             <img src="img/perspective.png">
             <p>Перспективы криптовалют</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gathering">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 gathering wow flipInY" data-wow-duration="1.5s" data-wow-delay="1.5s">
             <img src="img/gathering.png">
             <p>Как заработать на криптовалюте</p>
           </div>
@@ -74,10 +76,10 @@
     <div class="registration-wrap">
       <div class="container">
         <div class="row">
-          <div class="col-xl-auto reg-book">
+          <div class="col-lg-6 col-xl-auto reg-book">
             <img src="img/2b.png">
           </div>
-          <div class="col-xl-6 reg-text form-wrap">
+          <div class="col-lg-6 col-xl-6 reg-text form-wrap">
             <h2>Заполните форму</h2>
             <p>и получите электронную книгу <span>прямо сейчас</span></p>
             <!-- Тут вставить форму -->
@@ -129,7 +131,7 @@
 			</div>
 		</div>
   </div>
-
+<footer>
 <div class="footer-wrap">
   <div class="container">
     <div class="links-wrap">
@@ -162,5 +164,18 @@
   </div>
 
 </div>
+</footer>
+<script>
+wow = new WOW(
+			 {
+			 boxClass:     'wow',      // default
+			 animateClass: 'animated', // default
+			 offset:       0,          // default
+			 mobile:       false,       // default
+			 live:         true        // default
+		 }
+		 )
+		 wow.init();
+</script>
   </body>
 </html>
