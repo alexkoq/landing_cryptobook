@@ -52,6 +52,20 @@ h4,h5,h6,h1,h2,h3,ul,p
 .phone
   background-image: url(../img/phone.png)
   background-repeat: no-repeat
-  background-size: cover
+  background-size: contain
   width: 28px
   height: 28px
+
+.number
+  vertical-align: middle
+  a
+    vertical-align: middle
+    line-height: 28px
+    text-decoration: none
+    color: #000
+    &:hover
+      text-decoration: underline
+      cursor: pointer
+
+.phone-wrap
+  justify-content: flex-end
