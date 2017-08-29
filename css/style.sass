@@ -100,11 +100,15 @@ h4,h5,h6,h1,h2,h3,ul,p
     width: 323px
     height: 75px
     margin-top: 75px
-    background-image: url(../img/button.png)
+    background-image: url(../img/button_normal.png)
     background-repeat: no-repeat
     background-size: 323px 75px
     &:hover
       background-image: url(../img/button_hover.png)
+      background-repeat: no-repeat
+      background-size: 323px 75px
+    &:active
+      background-image: url(../img/button_press.png)
       background-repeat: no-repeat
       background-size: 323px 75px
 
@@ -250,11 +254,15 @@ h4,h5,h6,h1,h2,h3,ul,p
 
   .top-book
     margin: 0 auto
+    margin-top: 20px
 
   .top-book-text
     margin-left: auto
     margin-right: auto
+    margin-top: 30px
 
+  .logo
+    margin-left: 10px
   .top-safety
     justify-content: center
     padding-bottom: 50px
@@ -294,13 +302,20 @@ h4,h5,h6,h1,h2,h3,ul,p
   h1
     font-size: 34px !important
     line-height: 1.1em !important
+    text-align: center
   h2
     font-size: 32px !important
 
-  .logo
-    margin-left: 10px
+  .top-wrap
+    min-height: 700px
+    padding-top: 30px
+
   .number
     padding-right: 10px
+
+  .text-wrap
+    margin-top: 80px
+    margin-bottom: 50px
 
   .blockchain
     margin-top: 40px
@@ -320,11 +335,23 @@ h4,h5,h6,h1,h2,h3,ul,p
     a
       background-size: contain
       width: 280px
+      &:hover
+        background-size: contain
+        width: 280px
+      &:active
+        background-size: contain
+        width: 280px
+        
+@media (max-width: 480px)
+  .logo
+    margin-left: auto
+    margin-right: auto
+    // margin-left: 10px
+    width: 110px
+  .phone-wrap
+    display: none
 
 @media (max-width: 351px)
-  .phone-wrap
-    visibility: hidden
-
   .top-book
     img
       width: 80%
