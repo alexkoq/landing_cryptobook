@@ -231,13 +231,18 @@ h4, h5, h6, h1, h2, h3, ul, p {
     margin-left: 0  !important;
   margin-right: 0  !important;
 }
+.control.phone input.v {
+   margin-top: 0 !important; 
+   margin-bottom: 0 !important;
+  
+}
 .grp input[type=text], .grp input[type=password], .grp input[type=tel], .grp input[type=email] {
     font-family: "GothaProLig", sans-serif !important;
     padding: 1em 1em 1em 0;
     font-size: 1em;
     margin: 0;
     padding-left: 20px !important;
-    color: #bbbbbb !important;
+    color: #000 !important;
     border: 1px solid #bbbbbb !important;
     box-shadow: none;
     width: 320px !important;
@@ -295,6 +300,15 @@ h4, h5, h6, h1, h2, h3, ul, p {
   background-repeat: no-repeat !important;
   background-size: 323px 75px !important;
 }
+.PhoneCountry input[type=tel]{
+  width: 50px !important;
+  height: 51px !important;
+}
+.realPhone input[name=PhoneNumber]{
+  width: 250px !important;
+  height: 51px !important;
+}
+
 .readOnly{
   color: #bbbbbb;
   line-height: 16px;
@@ -502,21 +516,24 @@ h4, h5, h6, h1, h2, h3, ul, p {
   }
   .pc,.ut,.arb {
     text-align: left;
-    padding-left: 20px !important;
+    padding-left: 10px !important;
   }
   .ps a{
-    padding-right: 20px !important;
+    padding-right: 10px !important;
   }
   .pr a{
-   padding-right: 20px !important;
+   padding-right: 10px !important;
   }
   .cer a{
-    padding-right: 20px !important;
+    padding-right: 10px !important;
   }
 }
 @media (max-width: 767px) {
   .top-book {
     margin-left: -130px;
+  }
+  .links {
+    line-height: 26px;
   }
   .ps,.pr,.cer,.pc,.ut,.arb {
     text-align: center;
@@ -529,6 +546,15 @@ h4, h5, h6, h1, h2, h3, ul, p {
   }
   .cer span{
     display: none;
+  }
+  .ps a{
+    padding-right: 0px !important;
+  }
+  .pr a{
+   padding-right: 0px !important;
+  }
+  .cer a{
+    padding-right: 0px !important;
   }
    
 }
