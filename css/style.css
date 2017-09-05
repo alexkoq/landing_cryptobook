@@ -57,7 +57,7 @@ h4, h5, h6, h1, h2, h3, ul, p {
   height: 45px;
 }
 
-.phone {
+.phone-icon{
   background-image: url(../img/phone.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ h4, h5, h6, h1, h2, h3, ul, p {
   display: block;
   width: 323px;
   height: 75px;
-  margin-top: 75px;
+  margin-top: 65px;
   background-image: url(../img/button_normal.png);
   background-repeat: no-repeat;
   background-size: 323px 75px;
@@ -146,9 +146,13 @@ h4, h5, h6, h1, h2, h3, ul, p {
   background-repeat: no-repeat;
   width: 21px;
   height: 27px;
+  margin-left: 2px;
 }
 
 /*средняя часть с круглыми иконками до формы */
+.description-wrap {
+  padding-bottom: 70px;
+}
 .description-wrap h2 {
   font-size: 48px;
   font-family: "GothaProMed", sans-serif;
@@ -174,7 +178,7 @@ h4, h5, h6, h1, h2, h3, ul, p {
 
 /* книга и форма */
 .registration-wrap {
-  margin-top: 140px;
+  margin-top: 70px;
 }
 
 .reg-book {
@@ -185,20 +189,137 @@ h4, h5, h6, h1, h2, h3, ul, p {
 .form-wrap {
   margin-left: -100px;
   width: 500px;
+  justify-content: center;
 }
 
-.reg-text {
+.reg-text p{
   text-align: center;
   font-size: 30px;
 }
 .reg-text h2 {
   font-family: "GothaProReg", sans-serif;
   padding-bottom: 10px;
+  font-size: 36px;
+  text-align: center;
 }
 .reg-text span {
   font-family: "GothaProMed", sans-serif;
 }
-
+.form-wrapper{
+  text-align: center;
+}
+.grp h3{
+  display: none;
+}
+.regForm .grp {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px !important;
+}
+.grp{
+  margin-left: 0  !important;
+  margin-right: 0  !important;
+  padding-top: 30px !important;
+}
+.grp .wrapper .control {
+    border-bottom: none !important;
+    margin-bottom: 1em;
+    margin-right: 0.8em;
+    width: 320px !important; 
+}
+.regForm .grp:first-child {
+    margin-left: 0  !important;
+  margin-right: 0  !important;
+}
+.grp input[type=text], .grp input[type=password], .grp input[type=tel], .grp input[type=email] {
+    font-family: "GothaProLig", sans-serif !important;
+    padding: 1em 1em 1em 0;
+    font-size: 1em;
+    margin: 0;
+    padding-left: 20px !important;
+    color: #bbbbbb !important;
+    border: 1px solid #bbbbbb !important;
+    box-shadow: none;
+    width: 320px !important;
+}
+.custom-select select {
+    padding-right: 2em;
+    padding-left: 20px !important;
+    background: none;
+    border: 1px solid #bbbbbb !important;
+    border-radius: 1px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.regForm input[type=submit] {
+    padding: none;
+    margin-top: 5px !important;
+    border: none;
+    width: 323px !important;
+  height: 75px !important;
+    background-image: url(../img/button_normal.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 323px 75px !important; 
+    background-color: transparent !important;
+    text-transform: none !important;
+    font-weight: bold !important;
+    font-size: 1em !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: transparent !important;
+}
+ .regForm input[type=submit]:focus {
+     border: none !important; 
+    color: transparent !important;
+    background: #01C317;
+    background-image: url(../img/button_press.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 323px 75px !important;
+}
+.regForm input[type=submit]:active {
+  border: none !important; 
+  color: transparent !important;
+  background: #01C317;
+  background-image: url(../img/button_press.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 323px 75px !important;
+}
+.regForm input[type=submit]:hover {
+  text-decoration: underline;
+  border: none !important;
+  cursor: pointer;
+  background-image: url(../img/button_hover.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 323px 75px !important;
+}
+.readOnly{
+  color: #bbbbbb;
+  line-height: 16px;
+  font-size: 11px;
+  font-family: "GothaProLig", sans-serif;
+  width: 320px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 15px;
+}
+.readOnly a {
+  color: #bbbbbb;
+}
+.readOnly::before {
+    content: "";
+    display: block;
+    background-image: url(../img/lock.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 25px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 9px;
+}
 /*платежки */
 .payments-wrap {
   padding-top: 100px;
@@ -226,12 +347,13 @@ h4, h5, h6, h1, h2, h3, ul, p {
 }
 
 .links {
-  color: #bbbbbb;
+  color: #b28a47;
   text-align: center;
   font-size: 16px;
   font-family: "GothaProReg", sans-serif, sans-serif;
   font-weight: normal;
   line-height: 1.5em;
+  padding-bottom: 30px;
 }
 .links-wrap {
   padding-top: 60px;
@@ -243,6 +365,11 @@ h4, h5, h6, h1, h2, h3, ul, p {
 }
 .links a:hover {
   text-decoration: underline;
+}
+
+.links div {
+  padding-left: 0px;
+  padding-right:  0px;
 }
 
 .age-18 {
@@ -366,11 +493,44 @@ h4, h5, h6, h1, h2, h3, ul, p {
   .reg-book {
     display: none;
   }
+  .pc span{
+    display: none;
+  }
+  .ps,.pr,.cer {
+    text-align: right;
+    
+  }
+  .pc,.ut,.arb {
+    text-align: left;
+    padding-left: 20px !important;
+  }
+  .ps a{
+    padding-right: 20px !important;
+  }
+  .pr a{
+   padding-right: 20px !important;
+  }
+  .cer a{
+    padding-right: 20px !important;
+  }
 }
 @media (max-width: 767px) {
   .top-book {
     margin-left: -130px;
   }
+  .ps,.pr,.cer,.pc,.ut,.arb {
+    text-align: center;
+  }
+  .ps span{
+    display: none;
+  }
+  .pr span{
+    display: none;
+  }
+  .cer span{
+    display: none;
+  }
+   
 }
 @media (max-width: 576px) {
   h1 {
@@ -426,6 +586,40 @@ h4, h5, h6, h1, h2, h3, ul, p {
     background-size: contain;
     width: 280px;
   }
+.regForm .grp {
+  width: 280px !important;
+  }
+.grp .wrapper .control {
+  width: 280px !important; 
+  }
+.grp input[type=text], .grp input[type=password], .grp input[type=tel], .grp input[type=email] {
+    width: 280px !important;
+  }
+.regForm input[type=submit] {
+  width: 280px !important;
+  background-size: 280px !important; 
+}
+.regForm input[type=submit]:focus {
+  background-size: 280px !important;
+}
+.regForm input[type=submit]:active {
+  background-size: 280px !important;
+}
+.regForm input[type=submit]:hover {
+  background-size: 280px !important;
+}
+.readOnly{
+  width: 280px;
+}
+.hGroups{
+  margin: 0 auto !important; 
+}
+}
+
+@media (max-width: 640px) and (min-width: 400px){
+  .regForm .grp {
+    max-width: 323px !important; 
+  }
 }
 @media (max-width: 480px) {
   .logo {
@@ -437,18 +631,24 @@ h4, h5, h6, h1, h2, h3, ul, p {
   .phone-wrap {
     display: none;
   }
+  
+  .readOnly{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 @media (max-width: 351px) {
   .top-book img {
     width: 80%;
     margin-left: 40%;
   }
-
+  .readOnly{
+    margin-left: 10%;
+  }
   .top-safety {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
